@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Bavy</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">
+          <a href="index.html">
+          <img src="images/Plate.png" alt="Logo"></a>
+          </div>
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about us.html">About us</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/food_ultrawide1.png" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/food_ultrawide1.png" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/food_ultrawide1.png" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br>
+        
+    
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+
+          <blockquote>
+              <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. </q>
+          </blockquote>
+
+          <section class="imageCollage">
+            <img src="images/vegetarian01.jpg" alt="Placeholder">
+            <img src="images/vegetarian02.jpg" alt="Placeholder">
+            <img src="images/food9.jpg" alt="Placeholder">
+            <img src="images/food8.jpg" alt="Placeholder">
+            <img src="images/food4.jpg" alt="Placeholder">
+          </section>
+  
+
+
+  <section class="featured">
+    <h2>Latest posts</h2>
+
+
+    <div class="latestposts">
+    </div>
+
+
+  </section>
+
+
+<script src="js/script.js"></script>
+<script src="js/wp_api_post_featured_list.js"></script>
+
+
+</body>
+</html> 
+
