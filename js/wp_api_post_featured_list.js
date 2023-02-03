@@ -14,7 +14,7 @@ async function getProduct() {
         latestposts.innerHTML += `
             <div class="featured_post">
             <a href="post_description.html?id=${results[i].id}">
-                <img id="tents-image"src="${results[i].images[0].src}">
+                <img id="#"src="${results[i].images[0].src}">
                 <span class="post_title">${results[i].name}</span>
             </a>
             <button class="cta cta-small" onclick="openModal('${results[i]}')">View</button>                
