@@ -144,6 +144,10 @@ blockquote q {
     height: 100px;
     background-color: #355166;
   }
+.nav:hover li a{
+	color:#707E9C;
+}
+
   nav .logo {
     float: left;
     width: 40%;
@@ -173,12 +177,13 @@ blockquote q {
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+    transition: color .4s cubic-bezier(.23,1,.32,1);
+
   }
-
-nav .links a:hover {
-background-color: yellow;
-
+.nav li a:hover{
+color:#22EBBE;
 }
+
 
   #nav-toggle {
     position: absolute;
