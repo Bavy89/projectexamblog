@@ -17,7 +17,7 @@ async function getProduct() {
                 <img id="tents-image"src="${results[i].images[0].src}">
                 <span class="post_title">${results[i].name}</span>
             </a>
-            <div class="cta cta-small">View</div>    
+            <button class="cta cta-small" onclick="openModal('${results[i]}')">View</button>                
             </div>
         `;
     }
