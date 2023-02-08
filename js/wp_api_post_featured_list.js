@@ -14,7 +14,7 @@ async function getProduct() {
  latestposts.innerHTML += `
  <div class="featured_post">
  <a href="post_description.html?id=${res.id}">
- <img id="tents-image"src="${res.images[0].src}">
+ <img id="#"src="${res.images[0].src}">
  <span class="post_title">${res.name}</span>
  </a>
  <div class="cta-container">
@@ -34,7 +34,7 @@ getProduct();
 function openModal(description, image) { 
  var modal = document.getElementById("myModal"); 
  modal.style.display = "block"; 
- document.getElementById("modal-results").innerHTML = ${description} <img style="width: 20rem;"src="${image}">
+ document.getElementById("modal-results").innerHTML = `${description} <img style="width: 20rem;"src="${image}">`
 } 
 var span = document.getElementsByClassName("close")[0]; 
 span.onclick = function() { 
