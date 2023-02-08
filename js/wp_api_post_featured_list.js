@@ -34,7 +34,7 @@ getProduct();
 function openModal(description, image) { 
  var modal = document.getElementById("myModal"); 
  modal.style.display = "block"; 
- document.getElementById("modal-results").innerHTML = `${description} <img style="width: 20rem;padding: 20px;"src="${image}">`
+ document.getElementById("modal-results").innerHTML = `${description} <img style="width: 17rem;padding: 20px;"src="${image}">`
 } 
 var span = document.getElementsByClassName("close")[0]; 
 span.onclick = function() { 
