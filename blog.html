@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog-Bavy</title>
-    <link rel="stylesheet" href="stylesheet/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog-Bavy</title>
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
   <nav>
     <input id="nav-toggle" type="checkbox">
     <div class="logo">
       <a href="index.html">
-      <img src="images/Plate.png" alt="Logo"></a>
-      </div>
+        <img src="images/Plate.png" alt="Logo"></a>
+    </div>
     <ul class="links">
       <li><a href="index.html">Home</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -32,82 +36,60 @@
 
 
 
-      <div class="post-bg">
-      <div class="post-container">
-        <h1>Blog Posts</h1>
-        <div class="post-content">
-            <h2>Blog Post Number 1</h2>
-            <p>In non odio excepturi sint eum labore voluptates vitae quia qui et inventore itaque rerum veniam non exercitationem
-            delectus aut.</p>
-            <h4>By Bavy.</h4>
+  <div class="post-bg">
+    <div id="articles" class="post-container">
+    </div>
+  </div>
+  <footer>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-icons">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
 
-        <div class="post-content">
-            <h2>Blog Post Number 2</h2>
-            <p>In non odio excepturi sint eum labore voluptates vitae quia qui et inventore itaque rerum veniam non exercitationem
-            delectus aut.</p>
-            <h4>By Bavy.</h4>
-        </div>
-
-        <div class="post-content">
-            <h2>Blog Post Number 3</h2>
-            <p>In non odio excepturi sint eum labore voluptates vitae quia qui et inventore itaque rerum veniam non exercitationem
-            delectus aut.</p>
-            <h4>By Bavy.</h4>
+            <div class="copyright text-center">
+              <p>
+                &copy; Bavy Ado
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <footer>
-      <div class="footer-area-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="footer-icons">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <i class="fa-brands fa-facebook"></i>                      
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-brands fa-twitter"></i>                      
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-brands fa-linkedin"></i>                      
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-brands fa-youtube"></i>                      
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-    
-              <div class="copyright text-center">
-                <p>
-                  &copy; Bavy Ado
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-<script src="js/script.js"></script>
-<script src="js/modal.js"></script>
-<script src="js/wp_api_post_list.js"></script>
+  <script src="js/blog.js"></script>
 
 
 </body>
-</html> 
 
+</html>
