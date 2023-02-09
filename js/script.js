@@ -1,32 +1,41 @@
 // IMAGE SLIDE HOME PAGE
+window.onload = function () {
+  if (document.body.id == 'index') {
+    console.log("hei")
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-let slideIndex = 1;
-showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "none";
+      dots[slideIndex - 1].className += " active";
+    }
+    // IMAGE SLIDE HOME PAGE
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-// IMAGE SLIDE HOME PAGE
+};
+
 
 
 
@@ -39,20 +48,17 @@ function validateForm() {
   var message = document.forms["contact"]["message"].value;
 
   if (name == null || name == "") {
-      alert("Please enter your name");
-      return false;
+    alert("Please enter your name");
+    return false;
   } else if (email == null || email == "") {
-      alert("Please enter your e-mail");
-      return false;
+    alert("Please enter your e-mail");
+    return false;
   } else if (subject == null || subject == "") {
-      alert("Please enter your phone number");
-      return false;
+    alert("Please enter your phone number");
+    return false;
   } else if (message == null || message == "") {
-      alert("Please enter your message");
-      return false;
+    alert("Please enter your message");
+    return false;
   }
 }
 // CONTACT FORM SCRIPT VALIDATION
-
-
-
