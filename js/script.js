@@ -45,9 +45,10 @@ function validateForm() {
   var subject = document.forms["contact"]["subject"].value;
   var message = document.forms["contact"]["message"].value;
 
-  if (name == null || name == "") {
-    alert("Please enter your name");
-    return false;
+  if (name.length < 5) {
+  alert("Name must be at least 5 characters long");
+  return false;
+  }
   } else if (email == null || email == "") {
     alert("Please enter your e-mail");
     return false;
