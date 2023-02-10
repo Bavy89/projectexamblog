@@ -1,17 +1,23 @@
 // Create the const-variable
 const latestposts = document.querySelector(".featured"); 
+
 // Wordpress post API list
 const url = "https://projectblog.bavadonoroff.com/wp-json/wc/store/products"; 
+
 // Bring the post
 async function getProduct() { 
+
  // Using fetch() API to retrive the posts
  const response = await fetch(url); 
  const results = await response.json(); 
+ 
  // Loop for each post
  console.log(results) 
- for (let i = 1; i < results.length; i++) { 
- var res = results[i] 
- latestposts.innerHTML += `
+  for (let i = 1; i < results.length; i++) {
+  if (i > 3) break; // stop looping once the 5th post is reached
+  var res = results[i] 
+  latestposts.innerHTML += `
+
  <div class="featured_post">
  <img id="#"src="${res.images[0].src}">
  <span class="post_title">${res.name}</span>
