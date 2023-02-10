@@ -13,7 +13,6 @@ async function getProduct() {
  var res = results[i] 
  latestposts.innerHTML += `
  <div class="featured_post">
- <a href="post_description.html?id=${res.id}">
  <img id="#"src="${res.images[0].src}">
  <span class="post_title">${res.name}</span>
  </a>
