@@ -116,6 +116,8 @@ blockquote q {
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 760px;
+  filter: brightness(0.8);
+
 }
 
 .imageCollage img {
