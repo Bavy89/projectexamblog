@@ -1,4 +1,9 @@
-// IMAGE SLIDE HOME PAGElet slideIndex = 1;
+// IMAGE SLIDE HOME PAGE
+
+let slideIndex = 1;
+if (window.location.pathname === "/index.html") {
+  showSlides(slideIndex);
+}
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -24,17 +29,13 @@ function showSlides(n) {
 }
 
 
-
-
-
-
 // CONTACT FORM SCRIPT VALIDATION
+
 function validateForm() {
   var name = document.forms["contact"]["name"].value;
   var email = document.forms["contact"]["email"].value;
   var subject = document.forms["contact"]["subject"].value;
   var message = document.forms["contact"]["message"].value;
-
   if (name == null || name == "") {
     alert("Please enter your name");
     return false;
@@ -49,4 +50,3 @@ function validateForm() {
     return false;
   }
 }
-// CONTACT FORM SCRIPT VALIDATION
