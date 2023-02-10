@@ -51,13 +51,14 @@ function validateForm() {
   } else if (email == null || email == "") {
     alert("Please enter your e-mail");
     return false;
-  } else if (subject == null || subject == "") {
-    alert("Please enter a subject");
+  } else if (subject.length < 15) {
+    alert("Subject must be at least 15 characters long");
     return false;
-  } else if (message == null || message == "") {
-    alert("Please enter your message");
+  } else if (message.length < 25) {
+    alert("Message must be at least 25 characters long");
     return false;
   }
 }
+
 
 // CONTACT FORM SCRIPT VALIDATION
