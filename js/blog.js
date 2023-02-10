@@ -1,16 +1,31 @@
 const latestposts = document.querySelector(".featured");
 const url = "https://projectblog.bavadonoroff.com/wp-json/wc/store/products";
 
+let products = [];
+let currentIndex = 0;
+const showLimit = 4;
+
 async function getProduct() {
     try {
         const response = await fetch(url);
         const results = await response.json();
 
-        results.forEach((res) => {
-            addArticle(res.description, res.name, res.images[0].src);
-        });
+        products = results;
+        showMore();
     } catch (error) {
         console.error(error);
+    }
+}
+
+function showMore() {
+    const showCount = currentIndex + showLimit;
+    for (let i = currentIndex; i < showCount && i < products.length; i++) {
+        addArticle(products[i].description, products[i].name, products[i].images[0].src);
+        currentIndex++;
+    }
+
+    if (currentIndex >= products.length) {
+        document.getElementById("show-more").style.display = "none";
     }
 }
 
@@ -40,3 +55,6 @@ function addArticle(description, subject, img) {
 }
 
 getProduct();
+
+const showMoreButton = document.getElementById("show-more");
+showMoreButton.addEventListener("click", showMore);
