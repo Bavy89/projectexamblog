@@ -426,9 +426,7 @@ body {
   font-size: 100px;
   color: #355166;
   padding: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .about-us-text h2 {
