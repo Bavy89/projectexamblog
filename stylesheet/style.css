@@ -255,6 +255,9 @@ nav .icon-burger .line {
 /* Show more button */
 
 #show-more {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
     background-color: blue;
     color: white;
     padding: 10px 20px;
