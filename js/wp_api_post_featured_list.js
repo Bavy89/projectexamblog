@@ -14,7 +14,7 @@ async function getProduct() {
  // Loop for each post
  console.log(results) 
   for (let i = 0; i < results.length; i++) {
-  if (i > 4) break; // stop looping once the 5th post is reached
+  if (i > 4) break; // stop looping at 4
   var res = results[i] 
   latestposts.innerHTML += `
 
