@@ -17,7 +17,8 @@ async function getProduct() {
  <span class="post_title">${res.name}</span>
  </a>
  <div class="cta-container">
- <button class="cta cta-small" data-description="${res.description}" data-image="${res.images[0].src}">View</button> 
+ <button class="cta cta-small" style="cursor: pointer;" data-description="${res.description}" data-image="${res.images[0].src}">View</button>
+
  </div>
  </div>
  `; 
