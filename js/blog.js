@@ -1,8 +1,6 @@
 const latestposts = document.querySelector(".featured");
 const url = "https://projectblog.bavadonoroff.com/wp-json/wc/store/products";
 
-
-
 let products = [];
 let currentIndex = 0;
 const showLimit = 4;
@@ -56,7 +54,7 @@ function addArticle(description, subject, img) {
     articlesContainer.appendChild(postContent);
 }
 
-
 getProduct();
 
-
+const showMoreButton = document.getElementById("show-more");
+showMoreButton.addEventListener("click", showMore);
