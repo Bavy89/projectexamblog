@@ -6,15 +6,13 @@ async function getProduct() {
         const response = await fetch(url);
         const results = await response.json();
 
-        const latestFour = results.slice(0, 4);
-        latestFour.forEach((res) => {
+        results.forEach((res) => {
             addArticle(res.description, res.name, res.images[0].src);
         });
     } catch (error) {
         console.error(error);
     }
 }
-
 
 function addArticle(description, subject, img) {
     const articlesContainer = document.getElementById("articles");
