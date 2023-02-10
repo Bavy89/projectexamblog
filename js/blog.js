@@ -1,5 +1,9 @@
 const latestposts = document.querySelector(".featured");
 const url = "https://projectblog.bavadonoroff.com/wp-json/wc/store/products";
+const showMoreBtn = document.createElement("button");
+showMoreBtn.classList.add("show-more-btn");
+showMoreBtn.innerText = "Show More";
+
 
 let products = [];
 let currentIndex = 0;
