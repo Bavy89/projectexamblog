@@ -12,11 +12,11 @@ async function getProduct() {
  const results = await response.json(); 
  
  // Loop for each post
- console.log(results) 
-  for (let i = 0; i < results.length; i++) {
-  if (i > 4) break;
+ for (let i = 0; i < results.length; i++) {
+  if (i > 4) break; // stop looping once the 4th post is reached
   var res = results[i] 
   latestposts.innerHTML += `
+
 
  <div class="featured_post">
  <img id="#"src="${res.images[0].src}">
