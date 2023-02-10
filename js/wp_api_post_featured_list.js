@@ -12,7 +12,7 @@ async function getProduct() {
  const results = await response.json(); 
  
  // Loop for each post
- for (let i = 0; i < results.length; i++) {
+ for (let i = 1; i < results.length; i++) {
   if (i > 4) break; // stop looping once the 4th post is reached
   var res = results[i] 
   latestposts.innerHTML += `
