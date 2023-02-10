@@ -46,9 +46,8 @@ function validateForm() {
   var message = document.forms["contact"]["message"].value;
 
   if (name.length < 5) {
-  alert("Name must be at least 5 characters long");
-  return false;
-  }
+    alert("Name must be at least 5 characters long");
+    return false;
   } else if (email == null || email == "") {
     alert("Please enter your e-mail");
     return false;
@@ -60,4 +59,5 @@ function validateForm() {
     return false;
   }
 }
+
 // CONTACT FORM SCRIPT VALIDATION
