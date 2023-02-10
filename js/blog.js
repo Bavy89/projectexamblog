@@ -54,7 +54,17 @@ function addArticle(description, subject, img) {
     articlesContainer.appendChild(postContent);
 }
 
+// update the showMoreButton variable to include the class
+const showMoreButton = document.createElement("button");
+showMoreButton.classList.add("show-more-button");
+showMoreButton.innerText = "Show More";
+
+// attach the click event listener to the button
+showMoreButton.addEventListener("click", showMore);
+
+// attach the button to the container
+articlesContainer.appendChild(showMoreButton);
+
 getProduct();
 
-const showMoreButton = document.getElementById("show-more");
-showMoreButton.addEventListener("click", showMore);
+
