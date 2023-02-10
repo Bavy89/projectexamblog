@@ -252,6 +252,19 @@ nav .icon-burger .line {
   border-radius: 5px;
 }
 
+/* Show more button */
+.show-more-button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Show more button */
+
+
+
+
 /* contact */
 
 * {
