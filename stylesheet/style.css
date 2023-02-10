@@ -749,6 +749,11 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  
+  
+.about-us-text h1 {
+    font-size: 1.5em;
+}
 
   .cta {
     width: 100%;
