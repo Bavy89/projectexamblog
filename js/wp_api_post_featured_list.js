@@ -9,7 +9,7 @@ async function getProduct() {
  const results = await response.json(); 
  // Loop for each post
  console.log(results) 
- for (let i = 0; i < results.length; i++) { 
+ for (let i = 1; i < results.length; i++) { 
  var res = results[i] 
  latestposts.innerHTML += `
  <div class="featured_post">
