@@ -8,7 +8,7 @@ body {
   text-decoration: underline; 
 }
 
-.links a:selected {
+.links a.selected {
   color: #6AA1CC; 
   text-decoration: underline; 
 }
