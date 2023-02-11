@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+.links a:hover {
+  color: red; /* change the link color on hover */
+  text-decoration: underline; /* add an underline to the link on hover */
+}
+
 .featured_post a {
   text-decoration: none;
 }
