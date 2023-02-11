@@ -4,8 +4,8 @@ body {
 }
 
 .links a:hover {
-  color: red; /* change the link color on hover */
-  text-decoration: underline; /* add an underline to the link on hover */
+  color: #6a64f1; 
+  text-decoration: underline; 
 }
 
 .featured_post a {
