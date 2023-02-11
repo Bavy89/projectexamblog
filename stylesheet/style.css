@@ -8,8 +8,7 @@ body {
   text-decoration: underline; 
 }
 .selected {
-  color: blue; 
-
+  text-decoration-line: underline;
 }
 
 
