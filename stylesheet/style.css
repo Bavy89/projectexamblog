@@ -8,10 +8,6 @@ body {
   text-decoration: underline; 
 }
 
-.links a:active {
-  text-decoration: underline; 
-}
-
 
 .featured_post a {
   text-decoration: none;
