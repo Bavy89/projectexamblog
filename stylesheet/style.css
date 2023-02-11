@@ -7,10 +7,13 @@ body {
   color: #6AA1CC; 
   text-decoration: underline; 
 }
-.selected {
-  text-decoration-line: underline;
+.links {
+  text-decoration: underline;
 }
 
+.selected {
+  text-decoration: none;
+}
 
 .featured_post a {
   text-decoration: none;
