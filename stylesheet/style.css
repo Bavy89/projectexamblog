@@ -8,10 +8,9 @@ body {
   text-decoration: underline; 
 }
 
-.selected {
+.links a:active {
   color: #6AA1CC; 
-  text-decoration: underline; 
-}
+  text-decoration: underline; }
 
 
 .featured_post a {
