@@ -9,8 +9,8 @@ body {
 }
 
 .selected {
-  color: blue;
-  font-weight: bold; 
+  color: #6AA1CC; 
+  text-decoration: underline; 
 }
 
 
