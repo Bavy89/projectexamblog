@@ -371,10 +371,12 @@ max-width: 1000px;
 }
 
 .about-us-text h1 {
-  font-size: 100px;
-  color: #355166;
-  padding: 70px;
-  text-align: center;
+    margin: 10px 0;
+    background: #355066;
+    color: #fff;
+    border-left: 9px solid #1a2833;
+    text-transform: uppercase;
+    font-size: 27px;
 }
 
 .about-us-text h2 {
