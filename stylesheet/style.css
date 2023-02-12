@@ -374,6 +374,11 @@ max-width: 1000px;
 }
 
 .about-us-text h1 {
+
+  
+}
+
+.about-us-text h1 {
     padding: 10px;
     margin: 10px 0;
     background: #355066;
@@ -381,21 +386,6 @@ max-width: 1000px;
     border-left: 9px solid #1a2833;
     text-transform: uppercase;
     font-size: 27px;
-}
-}
-
-.about-us-text h2 {
-  font-size: 20px;
-  font-weight: 200;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 50px;
-
-  
-
 }
 
 /* blog post */
