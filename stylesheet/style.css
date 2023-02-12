@@ -377,6 +377,9 @@ max-width: 1000px;
     border-left: 9px solid #1a2833;
     text-transform: uppercase;
     font-size: 27px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .about-us-text h2 {
@@ -387,9 +390,7 @@ max-width: 1000px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 10px;
+
 }
 
 /* blog post */
