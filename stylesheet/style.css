@@ -387,6 +387,9 @@ max-width: 1000px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 /* blog post */
