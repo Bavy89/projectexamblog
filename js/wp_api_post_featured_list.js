@@ -19,11 +19,11 @@ async function getProduct() {
 
 
  <div class="featured_post">
- <img id="#"src="${res.images[0].src}">
+ <div class="featured_post_img"><img id="#"src="${res.images[0].src}"></div>
  <span class="post_title">${res.name}</span>
  </a>
  <div class="cta-container">
- <button class="cta cta-small" style="cursor: pointer;" data-description="${res.description}" data-image="${res.images[0].src}">View</button>
+ <button class="cta cta-small" style="cursor: pointer;" data-subject="${res.name}" data-description="${res.description}" data-image="${res.images[0].src}">View</button>
 
  </div>
  </div>
@@ -32,21 +32,24 @@ async function getProduct() {
  const buttons = document.querySelectorAll('.cta-container .cta'); 
  buttons.forEach(button => { 
  button.addEventListener('click', function() { 
- openModal(this.getAttribute('data-description'), this.getAttribute('data-image')); 
+ openModal(this.getAttribute('data-subject'), this.getAttribute('data-description'), this.getAttribute('data-image')); 
  }); 
  }); 
 } 
 getProduct(); 
-function openModal(description, image) { 
- var modal = document.getElementById("myModal"); 
- modal.style.display = "block"; 
- document.getElementById("modal-results").innerHTML = `${description} <img style="width: 17rem;padding: 20px;"src="${image}">`
+
+function openModal(subject, description, image) { 
+    var modal = document.getElementById("myModal"); 
+    modal.style.display = "block"; 
+    document.getElementById("modal-results").innerHTML = `<h2>${subject}</h2>${description} <img style="width: 17rem;padding: 20px;"src="${image}">`
 } 
+
 var span = document.getElementsByClassName("close")[0]; 
 span.onclick = function() { 
  var modal = document.getElementById("myModal"); 
  modal.style.display = "none"; 
 } 
+
 window.onclick = function(event) { 
  var modal = document.getElementById("myModal"); 
  if (event.target == modal) { 
