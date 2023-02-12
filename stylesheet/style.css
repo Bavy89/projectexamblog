@@ -359,6 +359,8 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 50px;
+
 }
 
 .container-about-footer {
@@ -564,6 +566,11 @@ margin: 0 auto;
   max-width: 900px;
   margin: auto;
   padding: 0 20px;
+}
+
+.circle-container h4 {
+ margin-bottom: 190px;
+
 }
 
 .circle-container h4, p {
