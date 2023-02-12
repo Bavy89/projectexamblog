@@ -1,123 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog-Bavy</title>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog-Bavy</title>
-  <link rel="stylesheet" href="stylesheet/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-results"></div>
+      </div>
+    </div>
+    <nav>
+      <input id="nav-toggle" type="checkbox" />
+      <div class="logo">
+        <a href="index.html"> <img src="images/Plate.png" alt="Logo" /></a>
+      </div>
+      <ul class="links">
+        <li><a href="index.html" class="selected">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about us.html">About us</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
 
-</head>
+    <div class="carousel">
+      <div
+        data-js="carousel__item"
+        class="carousel__item carousel__item--visible"
+      >
+        <a href="blog.html"
+          ><img src="images/food_ultrawide1.png" alt="slide image"
+        /></a>
+      </div>
 
-<body>
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div id="modal-results"></div>
-    </div>
-  </div>
-  <nav>
-    <input id="nav-toggle" type="checkbox">
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/Plate.png" alt="Logo"></a>
-    </div>
-<ul class="links">
-  <li><a href="index.html"class="selected">Home</a></li>
-  <li><a href="blog.html">Blog</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="about us.html">About us</a></li>
-</ul>
-    <label for="nav-toggle" class="icon-burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </label>
-  </nav>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="images/food_ultrawide1.png" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="images/food_ultrawide1.png" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="images/food_ultrawide1.png" style="width:100%">
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-  </div>
-  <br>
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-  <blockquote>
-    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua. </q>
-  </blockquote>
-  <section class="imageCollage">
-    <img src="images/vegetarian01.jpg" alt="Placeholder">
-    <img src="images/vegetarian02.jpg" alt="Placeholder">
-    <img src="images/food9.jpg" alt="Placeholder">
-    <img src="images/food8.jpg" alt="Placeholder">
-    <img src="images/food4.jpg" alt="Placeholder">
-  </section>
-  <section class="featured">
-    <h2>Latest posts</h2>
-    <div class="latestposts">
-    </div>
-  </section>
+      <div data-js="carousel__item" class="carousel__item">
+        <a href="blog.html"
+          ><img src="images/food_ultrawide1.png" alt="slide image"
+        /></a>
+      </div>
 
-  <footer>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-icons">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-facebook"></i>                      
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-twitter"></i>                      
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-linkedin"></i>                      
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-brands fa-youtube"></i>                      
-                  </a>
-                </li>
-              </ul>
+      <div class="carousel__actions">
+        <button data-js="carousel__button--prev" aria-label="PreviousButton">
+          <
+        </button>
+
+        <button data-js="carousel__button--next" aria-label="NextButton">
+          >
+        </button>
+      </div>
+    </div>
+
+    <section class="imageCollage">
+      <img src="images/vegetarian01.jpg" alt="Placeholder" />
+      <img src="images/vegetarian02.jpg" alt="Placeholder" />
+      <img src="images/food9.jpg" alt="Placeholder" />
+      <img src="images/food8.jpg" alt="Placeholder" />
+      <img src="images/food4.jpg" alt="Placeholder" />
+    </section>
+    <section class="featured">
+      <h2>Latest posts</h2>
+      <div class="latestposts"></div>
+    </section>
+
+    <footer>
+      <div class="footer-area-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer-icons">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-  
-            <div class="copyright text-center">
-              <p>
-                &copy; Bavy Ado
-              </p>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="copyright text-center">
+                <p>&copy; Bavy Ado</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="js/script.js"></script>
-  <script src="js/wp_api_post_featured_list.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+    <script src="js/wp_api_post_featured_list.js"></script>
+  </body>
 </html>
