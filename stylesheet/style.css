@@ -373,9 +373,9 @@ max-width: 1000px;
 
 }
 
-.about-us-text h1 {
-
-  
+.about-us-text {
+max-width: 1000px;
+margin: 0 auto;
 }
 
 .about-us-text h1 {
