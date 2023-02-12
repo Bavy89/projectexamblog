@@ -341,9 +341,8 @@ max-width: 1000px;
 /* about us */
 
 .container-about-header {
-  width: 100%;
-  height: 40vh;
-  background: #6aa1cc;
+max-width: 1000px;
+margin: 0 auto;
 }
 
 .container-about-inner {
